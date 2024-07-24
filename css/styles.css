@@ -1,178 +1,218 @@
+/* styles.css */
 
-body{
-  font-family: "montserrat";
+body {
+  font-family: "Montserrat";
 }
 
+h1, h2, h3 {
+  line-height: 1.5;
+}
 
-h1{
+h1 {
   font-family: "Montserrat-bold";
   font-size: 4rem;
-  line-height: 1.5;
 }
 
-h2{
-  font-family:"Montserrat-Bold";
+h2 {
+  font-family: "Montserrat-Bold";
   font-size: 3rem;
-  line-height: 1.5;
 }
 
-h3{
+h3 {
   font-family: "Montserrat-Bold";
   font-size: 1.5rem;
-
-}
-p{
-  color:gray;
 }
 
-#title{
+p {
+  color: gray;
+}
+
+#title {
   background-color: #DC143C;
-    color: #fff;
+  color: #fff;
 }
 
-.navbar-brand img{
-  width:150px;
-
+.navbar-brand img {
+  width: 150px;
 }
 
-.container-fluid{
+.container-fluid {
   padding: 4% 10% 10% 10%;
 }
 
-
-/* Navigation bar*/
-
-.navbar{
+/* Navigation bar */
+.navbar {
   padding: 0 0 4.5rem;
 }
 
-
-.nav-item{
+.nav-item {
   padding: 0 18px;
-  font-family: "Ubantu";
+  font-family: "Ubuntu";
 }
-.nav-link{
+
+.nav-link {
   font-size: 1rem;
-  font-family: "montserrat";
+  font-family: "Montserrat";
   font-weight: bold;
 }
 
-
-/*download-botton*/
-.download-botton{
-  margin: 4% 2% 0 0%;
+/* Download button */
+.download-botton {
+  margin: 4% 2% 0 0;
 }
 
-/* Titile image*/
-
-.title-image{
+/* Title image */
+.title-image {
   width: 100%;
   transform: rotate(25deg);
   position: absolute;
 }
 
-/*Feature section*/
-#features{
+/* Feature section */
+#features {
   padding: 7% 15%;
   background-color: #fff;
   position: relative;
   z-index: 1;
 }
 
-.feature-box{
+.feature-box {
   text-align: center;
   padding: 5%;
 }
 
-
-
-.icon{
-  color:#ef8172;
+.icon {
+  color: #ef8172;
   margin-bottom: 1rem;
   transition-duration: 0.5s;
 }
 
-.icon:hover{
-  color:#DC143C;
-
+.icon:hover {
+  color: #DC143C;
 }
 
-
-/*Testimonilas Section*/
-#testimonials{
-  padding:20px 15px;
+/* Testimonials Section */
+#testimonials {
+  padding: 20px 15px;
   text-align: center;
   background-color: #ef8172;
   color: #fff;
 }
 
-.testimonial-image{
+.testimonial-image {
   width: 30%;
   border-radius: 50%;
   margin: 20px;
   padding-top: 10px;
 }
 
-#press{
+#press {
   background-color: #ef8172;
   text-align: center;
   padding: 3% 0 0 3%;
 }
 
-.press-logo{
-  width:15%;
-  margin:20px 20px 25px;
+.press-logo {
+  width: 15%;
+  margin: 20px 20px 25px;
 }
 
-.carousal-item{
+.carousel-item {
   padding: 6% 10%;
-
 }
 
-
-/*Pricing section*/
-
-#pricing{
+/* Pricing section */
+#pricing {
   padding: 100px;
-  text-align:center;
+  text-align: center;
 }
 
-
-.princing-column{
+.pricing-column {
   padding: 3% 2%;
 }
 
-/*CTA Section*/
-
-#cta{
-  background-color:#DC143C;
-  text-align:center;
+/* CTA Section */
+#cta {
+  background-color: #DC143C;
+  text-align: center;
   color: #fff;
   padding: 10% 20%;
 }
 
-.cta-heading{
-  font-family:"montserrat-black";
+.cta-heading {
+  font-family: "Montserrat-black";
   font-size: 3rem;
   line-height: 4.5rem;
 }
 
-#footer{
+#footer {
   padding: 10% 20%;
   text-align: center;
 }
 
-.social-icon{
+.social-icon {
   margin: 20px 10px;
   cursor: pointer;
-
 }
 
-@media (max-width: 1028px){
-  #title{
+/* Back to Top Button */
+#back-to-top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  left: 30px; /* Changed from 'right' to 'left' */
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #4d4599;
+  color: white;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+#back-to-top:hover {
+  background-color: #555;
+}
+
+
+#back-to-top:hover {
+  background-color: #555;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.dark-mode .navbar {
+  background-color: #333333;
+}
+
+.dark-mode .card {
+  background-color: #424242;
+  color: #ffffff;
+}
+
+.dark-mode .feature-box,
+.dark-mode .pricing-column,
+.dark-mode #cta,
+.dark-mode #footer {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+.dark-mode .nav-link {
+  color: #ffffff;
+}
+
+@media (max-width: 1028px) {
+  #title {
     text-align: center;
   }
-  .title-image{
+
+  .title-image {
     position: static;
     transform: rotate(-7deg);
   }
